@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+h1{
+    display: inline-block;
+    vertical-align: top;
+    width: 80%;
+    font-size: 3rem;
+    margin-left: 2rem;
+}
+
+header{
+    min-height: 50vh;
+    padding: 0.5rem;
+    background-image: url(../Assets/Imagenes/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+
+header img{
+    width: 15%;
+    position:absolute;
+    top: 450px;
+}
+
+
+nav{
+    position: absolute;
+    min-height: 10vh;
+    padding: 0;
+    top: 15px;
+    right: 0;
+}
+
+a{
+    display: inline-block;
+    width: 8rem;
+    height: 3rem;
+    color:black;
+    background-color: blue;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 1rem;
+    font-weight: bolder;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+a:active{
+    background-color: green;
+}
+main h2{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+main img{
+    position: absolute;
+    width: 20%;
+    display: inline-block;
+    top: 500px;
+    right: 10px;
+}
+
+main div.cuerpoPagina{
+    padding: 20px;
+    position:absolute;
+    left: 300px;
+    width: 50%;
+}
+
+section{
+    padding: 20px;
+}
+
+.texto{
+    margin: 0 0 0 10px;
+}
+
+p.textoContacto{
+    padding: 20px
+}
