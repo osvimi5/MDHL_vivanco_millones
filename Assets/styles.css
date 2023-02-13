@@ -47,13 +47,13 @@ a{
     text-align: center;
     padding-top: 1rem;
     font-weight: bolder;
+    box-shadow: 0 5px 5px 0 black;
 }
-nav a:hover{
-    text-decoration: underline;
-}
-a:active{
+
+nav a:focus{
     background-color: green;
 }
+
 main h2{
     text-align: center;
     background-color: black;
