@@ -123,7 +123,8 @@ ul > li {
 
 /*Tablas*/
 
-.tabla table{
+.tabla{
+    margin: 20px 0 0 0;
     background-color: aliceblue;
     height: 50vh;
     width: 40rem;
@@ -133,7 +134,7 @@ ul > li {
     caption-side: bottom;
 }
 
-.tabla table, .tabla th, .tabla td {
+.tabla, .tabla th, .tabla td {
     border: 5px solid;
     border-color: black;
     text-align: center;
@@ -146,7 +147,8 @@ ul > li {
     padding-top: 5px;
 }
 
-.tabla2 table{
+.tabla2{
+    width: 80vw;
     margin: 30px 0 0 0 ;
 }
 
