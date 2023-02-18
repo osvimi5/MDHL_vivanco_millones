@@ -3,58 +3,71 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    background-color: rgb(209, 201, 190);
+    
+
 }
 
 h1{
+    padding: 10px;
     display: flex;
-    width: 80%;
+    width: 100%;
     font-size: 2rem;
     flex-grow: 0;
-    text-shadow: 2px 2px rgb(238, 245, 241);
+    color: #f1ca15;
+    background-color: #224a30;
 }
-
-
 header{
     height: 400px;
     background-image: url(./Imagenes/banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
 
 }
 
 nav{
+    padding: 10px 20px 0;
     display: flex;
-    gap: 0.5rem;
+    gap: 3rem;
     flex-flow: row wrap;
     flex-wrap: wrap;
     justify-content: end;
+    border-bottom: 10px solid #f1ca15;
+    border-radius: 0 0 30px 30px;
+    background-color: #224a30;
 }
 
 nav a{
-    background-color: rgb(207, 255, 196);
-    height: 1.5rem;
-    width: 8rem;
+    
     display: flex;
+    font-size: 1em;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    font-weight: bolder;
-    border-radius: 10px;
-    color: orangered;
+    border-radius: 25px;
+    color: #ffffff;
+}
+
+nav a:hover{
+    color: #ac8d04;
+    text-decoration: underline
 }
 
 .home{
-    background-color: rgb(124, 156, 117);
-    color: white;
+    width: 100px;
+    height: auto;
+    background-color: #f1ca15;
+}
+
+.registro{
+    display: flex;
+    flex-flow:row wrap;
 }
 
 
 h2{
     text-align: center;
-    background-color: black;
+    background: url(./Imagenes/bg.jpg);
     color: white;
 }
 
@@ -62,14 +75,15 @@ h2{
         display: flex;
         flex-wrap: wrap;
         gap: 1rem;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
-        margin: 30px 0 0 0 ;
+        background-color: #224a30
 }
 
 
+
 .logo{
-    width: 10vw;
+    width: 12vw;
     order: 1;
 }
 
@@ -78,12 +92,15 @@ div img{
     width: 15vw;   
     order: 3; 
 }
-.contenido{
-    width: 50%;
+
+div.contenido{
+    width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     order: 2;
+    background-color: #ffffff;
+    border-bottom: black;
 }
 
 section{
@@ -92,24 +109,33 @@ section{
 
 .texto{
     margin: 20px 0 0 10px;
+    background-color: #ffffff;
 }
 
 p.textoContacto{
-    padding: 20px
+    padding: 20px;
+    
 }
 
-.contenidoReglas{
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    order: 2;
+
+footer{
+    text-align: center;
+    background: url(./Imagenes/bg.jpg);
+    padding: 20px;
+}
+
+p.copyright{
+    background: url(./Imagenes/bg.jpg);
+    color: #ffffff;
+    font-size: 13px;
+    margin: 10px;
 }
 
 /*Listas*/
 li {
     list-style-position:initial;
     margin: 20px;
+    
 }
 
 .letras  li {
@@ -119,13 +145,16 @@ li {
 
 ul > li {
     list-style-type:circle ;
+    
 }
+
+
 
 /*Tablas*/
 
 .tabla{
     margin: 20px 0 0 0;
-    background-color: aliceblue;
+    background-color: #ffffff;
     height: 50vh;
     width: 40rem;
     table-layout: auto;
@@ -133,6 +162,7 @@ ul > li {
     border-collapse: collapse;
     caption-side: bottom;
 }
+
 
 .tabla, .tabla th, .tabla td {
     border: 5px solid;
@@ -142,7 +172,7 @@ ul > li {
 
 .tabla th {
     background-color: black;
-    color: aliceblue;
+    color: #ffffff;
     padding-bottom: 5px;
     padding-top: 5px;
 }
@@ -154,4 +184,72 @@ ul > li {
 
 .tabla2 td{
     padding-top: 10px;
+}
+
+h3{
+    margin: 20px;
+    text-align: center;
+    font-size: 2em;
+}
+
+form{
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+form label,form legend{
+    font-size: 20px;
+    margin-top: 20px;
+    margin: 0 0 10px;
+}
+.textoCaja{
+    border-radius: 0;
+    font-size: 18px;
+    margin: 0 0 20px 0;
+    padding: 10px;
+}
+
+.option{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content:space-evenly;
+
+}
+
+fieldset{
+    margin: 30px 20px;
+
+}
+
+.option label{
+    margin-top: auto;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background:#224a30;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+    
+}
+
+.enviar:hover{
+    background:#183522;
+    transform: scale(1.2);
+}
+
+.mapa-contenido{
+    
+        padding: 3em 0;
+        background: linear-gradient(#fefefe,#888888);
+    
 }
